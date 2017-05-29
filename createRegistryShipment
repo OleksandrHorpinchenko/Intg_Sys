@@ -1,0 +1,61 @@
+createRegistryShipment
+
+parcelID               NN OLI00000000000001ICS         parcel id / tracking number in ics system                            text. mask 
+clientTrackNumber      NN xvd462000                    tracking number which was sent to clients email from shipper         text
+
+// consignee Info
+
+    name               NN  transliteration !!!                                                                                                    text
+    surname            NN  transliteration !!!                                                                                                    text
+    fullName           NN  transliteration !!!                                                                                                    text
+    phoneNumber        NN  0934949444 - +380934949444 (10-13)                                                                                     text
+    tax_number         NN                                                                                                                         text
+
+    //document  (if (exceeded impost) )
+        
+        full name      NN  Cyrillic                                                                                                         text
+        serias         --             (id passport doesn`t contains serias)                                                                 text
+        number         NN                                                                                                                   text / integer
+     registration_date NN                                                                                                                   sql.Date
+        expiry_date    --             ( only on id passport )                                                                               sql.Date
+     personal_data_num --          ( only on id passport )                                                                                  character varying(14)
+        published_by   NN                                                                                                                   text
+    
+    // address
+
+  id_address_type      NN client address (warehouse - door) / first mile partners branch  (warehouse - warehouse)                                    int
+  id_warehouse         --                                                                                                                            int
+        city           NN                                                                                                                            text
+        country        NN default Ukraine / (export) country of destinition                                                                          int
+        zipCode        NN                                                                                                                            text
+        address        NN                                                                                                                            text
+        
+
+
+        goods          NN {"goods":[{"good":"some description","cost per unit":1}{"good":"some description 2","cost per unit":3]}                    json
+        currency       NN    cc   from https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json                                             text
+        payer          NN  id payer  (shipper / consignee / third party person)                                                                      int
+  ??    paymentMethod  NN  cash / cash less ...                                                                                                      int
+        movementschema NN  delivery method                                                                                                           int
+        
+        total_cost     NN  sum(goods.cost_per_good)                                                                                                  BigDecimal
+
+
+метод реєстрації посилки (даних про посилку) в системі партнера (перший з методів)
+
+деякі параметри брались на перспективу
+
+писалось на швидку руку
+
+перепрошую за мою англійську
+
+чекаю коментарі і зауваження
+
+
+
+
+
+
+
+                                                                                     
+        

@@ -1,0 +1,4 @@
+parcelID               NN OLI00000000000001ICS
+id_track_status        NN                       some integer code
+date                   NN                       timestamp
+/////////////////////////////////////////////////// some additional info /////////////////////////////////////////////////// 

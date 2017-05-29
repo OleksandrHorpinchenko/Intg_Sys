@@ -1,0 +1,10 @@
+parcelID               NN OLI00000000000001ICS
+Dimensional weight     NN BigDecimal
+Actual weight          NN BigDecimal
+length                 NN BigDecimal
+height                 NN BigDecimal
+width                  NN BigDecimal
+ICS_costs              NN BigDecimal
+currency               NN cc   from https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json                                             text
+ICS_costs_uah          NN BigDecimal
+clearance_cost         NN BigDecimal

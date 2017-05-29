@@ -1,0 +1,5 @@
+parcelID               NN OLI00000000000001ICS
+ICS_costs_uah          NN BigDecimal
+total_price_uah        NN BigDecimal
+???   tax              NN BigDecimal
+
