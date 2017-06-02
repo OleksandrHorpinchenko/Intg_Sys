@@ -1,0 +1,4 @@
+parcelID               NN OLI00000000000001ICS
+parcel state code      NN                       some integer code
+date                   NN                       timestamp
+regionCode             NN                       some integer code           // ???

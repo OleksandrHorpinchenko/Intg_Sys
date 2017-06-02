@@ -1,0 +1,56 @@
+{
+  "parcelCode" : "OLI00000000000000ICS",        
+  "trackingNumber" : "1ZE663F533613",
+                            
+  "deliveryMethod" : "air",      
+  "warehouse" : "nj",
+
+  "recipientAddress" : {                
+    "surrname" : "Doe",
+    "firstname" : "John",
+    "patronymic" : "Petrovich",            
+    "phone" : "+380445553377",              
+    "setlement" : "c. Иванков",
+        "region" : "Киевская обл" ,           
+        "street" : "Соборна 3 кв 15"                               
+  },
+
+  "deliveryAddress" : {
+    "deliveryType" : "1",  //warehouse - warehouse
+        "deliveryPartner" : "2",  //meest          
+    "surrname" : "Doe",
+    "firstname" : "John",
+    "patronymic" : "Petrovich",            
+    "phone" : "0445553377",    
+
+        //адресна доставка              
+    "setlement" : "c. Иванков",
+        "region" : "Киевская обл" ,           
+        "street" : "Соборна 3 кв 15"                              
+
+        //доставка на склад
+        "id warehouse" : 1
+  },
+    "recipientPassport":{
+        "full name":"Іванов Іван Іванович",     //both
+        "serial" : "УЦ" ,                       //old
+        "number" : "88998866",                  //both
+        "registration date" : "11.11.1990",     //both
+        "expiry date" : "20.06.2017",           //new
+        "personal data num":"1000000-892",      //new
+        "published by" : "Ктївський УМВС..."    //both
+    },
+  "items":{    
+    "0": {
+      "description" : "shoes", 
+      "qty" : "2",
+      "cost" : "19.99",              
+      "totalcost" : "39.98"             
+    },
+    "1": {
+      "description" : "robe",
+      "qty" : "1",
+      "cost" : "27.99",              
+    }
+  }
+}

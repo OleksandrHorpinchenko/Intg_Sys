@@ -1,0 +1,12 @@
+ parcelID               NN OLI00000000000001ICS
+ ICS_costs_uah          NN BigDecimal
+ total_price_uah        NN BigDecimal
+ currency               NN 
+ clearance_cost         NN BigDecimal
+// clearance_cost - у випадку невірного проставлення вартості посилки. несе в собі суму яку потрібно ДОПЛАТИТИ за мито
+ 
+тобто клієнт вказав вартість 1000. податок (1000-150)*0.35 = 297,5
+
+на митниці переоцінено в 2000. податок (2000-150)*0.35 = 647.5
+
+clearance_cost = 647.5 - 297,5 =350
